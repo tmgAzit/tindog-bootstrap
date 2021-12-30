@@ -1,34 +1,40 @@
 body {
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 #title {
   background: #ff4c68;
   color: #fff;
+  text-align: left;
 }
 
-h1 {
-  font-family: 'Montserrat-Black';
-  font-size: 7rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: 'Montserrat-bold';
-  font-size: 2.5rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: 'Montserrat-bold';
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat-Bold';
 }
 
 p {
   color: #333131;
+  font-size: 1rem;
 }
+
+.big-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 /* navigation bar */
@@ -37,7 +43,7 @@ p {
 }
 .navbar-brand {
   font-family: 'Ubuntu';
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -46,7 +52,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: 'Montserrat-light';
 }
 
@@ -55,21 +61,28 @@ p {
   margin: 10% 3% 5% 0;
 }
 
+/* title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* title-image */
 .title-img {
   width: 60%;
   transform: rotate(25deg);
   position: absolute;
-  right: 22%;
+  right: 30%;
 }
 
 /* features */
+.feature-heading {
+  font-weight: bold;
+  font-size: 1rem;
+}
 .feature-box {
-  text-align: center;
   padding: 4.5%;
 }
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
@@ -87,12 +100,12 @@ p {
 
 #testimonials {
   background: #ef8172;
-  text-align: center;
   color: #fff;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -103,7 +116,6 @@ p {
 
 #press {
   background: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -115,9 +127,34 @@ p {
 /* pricing */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* cta - section */
+#cta {
+  background: #ff4c68;
+  color: #fff;
+  padding: 3% 15% 7%;
+}
+
+/* footer */
+.icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
